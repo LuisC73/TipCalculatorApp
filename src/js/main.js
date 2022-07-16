@@ -69,6 +69,7 @@ function handlePeople(){
     }
     peopleValue = parseFloat($people.value)
     console.log(peopleValue);
+    calculator()
 }
 
 function handleClick(e){
@@ -88,8 +89,8 @@ function handleClick(e){
 
 function calculator(){
     if(peopleValue >= 1){
-        let tipAmount = billValue * tipValue / peopleValue;
-        let total = billValue + (tipValue + 1) / peopleValue;
+        let tipAmount = (billValue * tipValue) / peopleValue;
+        let total = billValue * (tipValue + 1 ) / peopleValue;
         
         $tipText[0].innerText = `$${tipAmount.toFixed(2)}`;
         $tipText[1].innerText = `$${total.toFixed(2)}`;    

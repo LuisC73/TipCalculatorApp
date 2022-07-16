@@ -311,6 +311,7 @@ body {
 }
 .tip__button--active {
   background-color: hsl(172deg, 67%, 45%);
+  color: #000;
 }
 .tip__reset--disabled {
   opacity: 0.4;

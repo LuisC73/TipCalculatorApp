@@ -66,6 +66,7 @@
 
     &__button--active{
         background-color: vars.$cyan;
+        color: #000;
     }
 
     &__reset--disabled{
