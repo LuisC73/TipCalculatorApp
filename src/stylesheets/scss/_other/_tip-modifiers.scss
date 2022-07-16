@@ -13,9 +13,20 @@
         }
     }
 
+    &__input--bollar{
+        background: url('../../images/icon-dollar.svg') no-repeat .6rem;
+        background-size: .6rem;
+    }
+
+    &__input--people{
+        background: url('../../images/icon-person.svg') no-repeat .6rem;
+        background-size: .6rem;
+    }
+
     &__p--amount,&__p--total{
         color: vars.$white;
         font-size: .9rem;
+        display: block;
     }
 
     &__p--sub{
@@ -26,6 +37,16 @@
     &__p--number{
         color: vars.$cyan;
         font-size: 2rem;
+    }
+
+    &__p--error{
+        color: red;
+        margin-left: 1rem;
+        display: inline;
+    }
+
+    #errorBill{
+        margin-left: 7rem;
     }
 
     &__button--reset{

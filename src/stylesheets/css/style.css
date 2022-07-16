@@ -145,6 +145,7 @@ body {
   font-size: 600;
   color: rgb(88, 88, 88);
   margin-bottom: 0.2rem;
+  display: inline;
 }
 .tip__input {
   width: 100%;
@@ -252,9 +253,18 @@ body {
 .tip__input--button::placeholder {
   color: gray;
 }
+.tip__input--bollar {
+  background: url("../../images/icon-dollar.svg") no-repeat 0.6rem;
+  background-size: 0.6rem;
+}
+.tip__input--people {
+  background: url("../../images/icon-person.svg") no-repeat 0.6rem;
+  background-size: 0.6rem;
+}
 .tip__p--amount, .tip__p--total {
   color: hsl(0deg, 0%, 100%);
   font-size: 0.9rem;
+  display: block;
 }
 .tip__p--sub {
   color: gray;
@@ -263,6 +273,14 @@ body {
 .tip__p--number {
   color: hsl(172deg, 67%, 45%);
   font-size: 2rem;
+}
+.tip__p--error {
+  color: red;
+  margin-left: 1rem;
+  display: inline;
+}
+.tip #errorBill {
+  margin-left: 7rem;
 }
 .tip__button--reset {
   width: 100%;

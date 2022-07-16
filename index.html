@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
   <link rel="stylesheet" href="./src/stylesheets/css/style.css">
-  <title>Frontend Mentor | Tip calculator app</title>
+  <title>Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
@@ -18,8 +18,9 @@
       <div class="tip__container">
         <div class="tip__left">
           <div class="tip__div">
-            <p class="tip__p">Bill</p>
-            <input type="number" class="tip__input" placeholder="0">
+            <label class="tip__p">Bill</label>
+            <p class="tip__p tip__p--error" id="errorBill"></p>
+            <input type="number" class="tip__input tip__input--bollar" placeholder="0" id="bill">
           </div>
           <div class="tip__div">
             <p class="tip__p">Select Tip %</p>
@@ -33,8 +34,9 @@
             </div>    
           </div>
           <div class="tip__div">
-            <p class="tip__p">Number of People</p>
-            <input type="number" class="tip__input" placeholder="0">
+            <label class="tip__p">Number of People</label>
+            <p class="tip__p tip__p--error" id="errorPeople"></p>
+            <input type="number" class="tip__input tip__input--people" placeholder="0" id="people">
           </div>  
         </div>
         <div class="tip__right">
@@ -52,10 +54,12 @@
             </div>
             <p class="tip__p tip__p--number">$0.00</p>
           </div>  
-          <input type="button" value="Reset" class="tip__button tip__button--reset" disabled>
+          <input type="button" value="Reset" class="tip__button tip__button--reset" id="reset">
         </div>
       </div>
     </section>
   </main>
+
+  <script src="./src/js/main.js"></script>
 </body>
 </html>
