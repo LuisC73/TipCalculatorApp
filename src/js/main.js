@@ -98,8 +98,8 @@ function calculator(){
 
 function resetCalculator(){
     $reset.classList.add('tip__reset--disabled')
-    $people.value = 0;
-    $bill.value = 0;
+    $people.value = "";
+    $bill.value = "";
     $tipText[0].innerText = `$0.00`;
     $tipText[1].innerText = `$0.00`;  
 }

@@ -7,9 +7,24 @@
         text-align: center;
         font-size: .9rem;
         font-weight: 700;
+        width: 100%;
+        background-color: vars.$cyan-grayish-very-light;
+        padding: .3rem .8rem;
+        border-radius: .3rem;
+        outline: none;
+        color: vars.$cyan-dark;
 
         &::placeholder{
             color: gray;
+        }
+
+        &:focus{
+            border: 1.4px solid vars.$cyan;
+        }
+
+        &:hover{
+            background-color: vars.$cyan-grayish-very-light;
+            color: vars.$cyan-dark;
         }
     }
 

@@ -263,9 +263,22 @@ body {
   text-align: center;
   font-size: 0.9rem;
   font-weight: 700;
+  width: 100%;
+  background-color: hsl(189deg, 41%, 97%);
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.3rem;
+  outline: none;
+  color: hsl(183deg, 100%, 15%);
 }
 .tip__input--button::placeholder {
   color: gray;
+}
+.tip__input--button:focus {
+  border: 1.4px solid hsl(172deg, 67%, 45%);
+}
+.tip__input--button:hover {
+  background-color: hsl(189deg, 41%, 97%);
+  color: hsl(183deg, 100%, 15%);
 }
 .tip__input--bollar {
   background: url("../../images/icon-dollar.svg") no-repeat 0.6rem;
