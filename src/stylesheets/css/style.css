@@ -226,7 +226,7 @@ body {
     font-size: 1.2rem;
   }
   .tip__div:not(:first-child) {
-    margin-top: 0.8rem;
+    margin-top: 2rem;
   }
   .tip__buttons {
     grid-template-columns: repeat(2, 1fr);
@@ -282,6 +282,9 @@ body {
   }
   .tip__button--reset {
     margin-top: 4rem;
+  }
+  .tip__p--sub {
+    font-size: 1rem;
   }
 }
 
