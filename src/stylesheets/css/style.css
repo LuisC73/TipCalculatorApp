@@ -183,6 +183,20 @@ body {
   background-color: hsl(185deg, 41%, 84%);
   color: #000;
 }
+.tip__reset {
+  width: 100%;
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
+  font-weight: 700;
+  margin-top: auto;
+  border-radius: 0.2rem;
+  padding: 0.4rem 1.4rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.tip__reset:hover {
+  background-color: hsl(185deg, 41%, 84%);
+}
 .tip__content {
   display: flex;
   justify-content: space-between;
@@ -282,16 +296,11 @@ body {
 .tip #errorBill {
   margin-left: 7rem;
 }
-.tip__button--reset {
-  width: 100%;
+.tip__button--active {
   background-color: hsl(172deg, 67%, 45%);
-  color: hsl(183deg, 100%, 15%);
-  font-weight: 700;
-  margin-top: auto;
-  text-transform: uppercase;
 }
-.tip__button--reset:hover {
-  background-color: hsl(185deg, 41%, 84%);
+.tip__reset--disabled {
+  opacity: 0.4;
 }
 
 @media screen and (max-width: 768px) {

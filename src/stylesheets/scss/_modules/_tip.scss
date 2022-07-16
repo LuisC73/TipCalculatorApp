@@ -87,6 +87,22 @@
         }
     }
 
+    &__reset{
+        width: 100%;
+        background-color: vars.$cyan;
+        color: vars.$cyan-dark;
+        font-weight: 700;
+        margin-top: auto;
+        border-radius: .2rem;
+        padding: .4rem 1.4rem;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover{
+            background-color: vars.$cyan-grayish-light;
+        }
+    }
+
     &__content{
         @include mixin.flex(space-between,center,row);
 

@@ -25,7 +25,7 @@
           <div class="tip__div">
             <p class="tip__p">Select Tip %</p>
             <div class="tip__buttons">
-              <input type="button" value="5%" class="tip__button">
+              <input type="button" value="5%" class="tip__button tip__button--active">
               <input type="button" value="10%" class="tip__button">
               <input type="button" value="15%" class="tip__button">
               <input type="button" value="25%" class="tip__button">
@@ -45,16 +45,16 @@
               <p class="tip__p tip__p--amount">Tip Amount</p>
               <p class="tip__p tip__p--sub">/ person</p>
             </div>
-            <p class="tip__p tip__p--number">$0.00</p>
+            <p class="tip__p tip__p--number" id="tipAmount">$0.00</p>
           </div>
           <div class="tip__content">
             <div class="div__div">
               <p class="tip__p tip__p--total">Total</p>
               <p class="tip__p tip__p--sub">/ person</p>
             </div>
-            <p class="tip__p tip__p--number">$0.00</p>
+            <p class="tip__p tip__p--number" id="total">$0.00</p>
           </div>  
-          <input type="button" value="Reset" class="tip__button tip__button--reset" id="reset">
+          <input type="button" value="Reset" class="tip__reset tip__reset--disabled" id="reset" disabled>
         </div>
       </div>
     </section>

@@ -49,17 +49,12 @@
         margin-left: 7rem;
     }
 
-    &__button--reset{
-        width: 100%;
+    &__button--active{
         background-color: vars.$cyan;
-        color: vars.$cyan-dark;
-        font-weight: 700;
-        margin-top: auto;
-        text-transform: uppercase;
+    }
 
-        &:hover{
-            background-color: vars.$cyan-grayish-light;
-        }
+    &__reset--disabled{
+        opacity: .4;
     }
 }
 
