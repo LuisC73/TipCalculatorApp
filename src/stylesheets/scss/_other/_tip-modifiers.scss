@@ -1,0 +1,36 @@
+@use '../_layout/vars'as vars;
+@use '../_layout/mixins'as mixin;
+
+
+.tip{
+    &__input--button{
+        text-align: center;
+        &::placeholder{
+            color: #000;
+        }
+    }
+
+    &__p--amount,&__p--total{
+        color: vars.$white;
+        font-size: .9rem;
+    }
+
+    &__p--sub{
+        color: gray;
+        font-size: .8rem;
+    }
+
+    &__p--number{
+        color: vars.$cyan;
+        font-size: 2rem;
+    }
+
+    &__button--reset{
+        width: 100%;
+        background-color: vars.$cyan;
+        color: vars.$cyan-dark;
+        font-weight: 700;
+        margin-top: auto;
+        text-transform: uppercase;
+    }
+}

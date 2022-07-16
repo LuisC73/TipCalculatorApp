@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+a {
+  display: block;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+::selection {
+  background-color: hsl(172deg, 67%, 45%);
+  color: #fff;
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  display: block;
+  color: inherit;
+}
+
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: hsl(172deg, 67%, 45%);
+  border-radius: 10px;
+}
+
+body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Space Mono", monospace;
+  background-color: hsl(185deg, 41%, 84%);
+}
+
+.tip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(185deg, 41%, 84%);
+  width: 100vw;
+  height: 100vh;
+}
+.tip__container {
+  display: flex;
+  background-color: hsl(0deg, 0%, 100%);
+  width: 50%;
+  height: 52%;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.3);
+  padding: 2rem 1rem 2rem 2.5rem;
+}
+.tip__left {
+  width: 50%;
+  padding-right: 1.5rem;
+}
+.tip__right {
+  width: 50%;
+  background-color: hsl(183deg, 100%, 15%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 1rem;
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+.tip__p {
+  font-size: 0.9rem;
+  font-size: 600;
+  color: rgb(88, 88, 88);
+  margin-bottom: 0.2rem;
+}
+.tip__input {
+  width: 100%;
+  background-color: hsl(189deg, 41%, 97%);
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.4rem;
+  text-align: end;
+  font-size: 0.9rem;
+}
+.tip__div:not(:first-child) {
+  margin-top: 1.5rem;
+}
+.tip__buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.tip__button {
+  background-color: hsl(183deg, 100%, 15%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 0.2rem;
+  padding: 0.4rem 1.4rem;
+  font-size: 0.95rem;
+  text-align: center;
+}
+.tip__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.tip__content:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+.tip__input--button {
+  text-align: center;
+}
+.tip__input--button::placeholder {
+  color: #000;
+}
+.tip__p--amount, .tip__p--total {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 0.9rem;
+}
+.tip__p--sub {
+  color: gray;
+  font-size: 0.8rem;
+}
+.tip__p--number {
+  color: hsl(172deg, 67%, 45%);
+  font-size: 2rem;
+}
+.tip__button--reset {
+  width: 100%;
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
+  font-weight: 700;
+  margin-top: auto;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=style.css.map */

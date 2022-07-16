@@ -1,0 +1,9 @@
+@use '../_layout/vars'as vars;
+
+body{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    font-family: vars.$font;
+    background-color: vars.$cyan-grayish-light;
+}

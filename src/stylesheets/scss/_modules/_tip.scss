@@ -1,0 +1,79 @@
+@use '../_layout/vars'as vars;
+@use '../_layout/mixins'as mixin;
+
+.tip{
+    @include mixin.flex(center,center,column);
+    background-color: vars.$cyan-grayish-light;
+    width: 100vw;
+    height: 100vh;
+
+
+    &__container{
+        display: flex;
+        background-color: vars.$white;
+        width: 50%;
+        height: 52%;
+        border-radius: 1.2rem;
+        box-shadow: 0 0 .4rem rgba(0,0,0, .3);
+        padding: 2rem 1rem 2rem 2.5rem;
+    }
+
+    &__left{
+        width: 50%;
+        padding-right: 1.5rem;
+    }
+
+    &__right{
+        width: 50%;
+        background-color: vars.$cyan-dark;
+        color: vars.$white;
+        border-radius: 1rem;
+        padding: 1.6rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__p{
+        font-size: .9rem;
+        font-size: 600;
+        color: rgb(88, 88, 88);
+        margin-bottom: .2rem;
+    }
+
+    &__input{
+        width: 100%;
+        background-color: vars.$cyan-grayish-very-light;
+        padding: .3rem .8rem;
+        border-radius: .4rem;
+        text-align: end;
+        font-size: .9rem;
+    }
+
+    &__div:not(:first-child){
+        margin-top: 1.5rem;
+    }
+
+    &__buttons{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+        margin-top: .5rem;
+    }
+
+    &__button{
+        background-color: vars.$cyan-dark;
+        color: vars.$white;
+        border-radius: .2rem;
+        padding: .4rem 1.4rem;
+        font-size: .95rem;
+        text-align: center;
+    }
+
+    &__content{
+        @include mixin.flex(space-between,center,row);
+
+        &:not(:first-child){
+            margin-top: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/stylesheets/css/style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+  <main class="main">
+    <section class="tip">
+      <div class="tip__container">
+        <div class="tip__left">
+          <div class="tip__div">
+            <p class="tip__p">Bill</p>
+            <input type="text" class="tip__input" placeholder="0">
+          </div>
+          <div class="tip__div">
+            <p class="tip__p">Select Tip %</p>
+            <div class="tip__buttons">
+              <input type="button" value="5%" class="tip__button">
+              <input type="button" value="10%" class="tip__button">
+              <input type="button" value="15%" class="tip__button">
+              <input type="button" value="25%" class="tip__button">
+              <input type="button" value="50%" class="tip__button">
+              <input type="text" placeholder="Custom" class="tip__input tip__input--button">
+            </div>    
+          </div>
+          <div class="tip__div">
+            <p class="tip__p">Number of People</p>
+            <input type="text" class="tip__input" placeholder="0">
+          </div>  
+        </div>
+        <div class="tip__right">
+          <div class="tip__content">
+            <div class="div__div">
+              <p class="tip__p tip__p--amount">Tip Amount</p>
+              <p class="tip__p tip__p--sub">/ person</p>
+            </div>
+            <p class="tip__p tip__p--number">$0.00</p>
+          </div>
+          <div class="tip__content">
+            <div class="div__div">
+              <p class="tip__p tip__p--total">Total</p>
+              <p class="tip__p tip__p--sub">/ person</p>
+            </div>
+            <p class="tip__p tip__p--number">$0.00</p>
+          </div>  
+          <input type="button" value="Reset" class="tip__button tip__button--reset" disabled>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
