@@ -80,6 +80,7 @@ function handleClick(e){
             $tip.classList.add("tip__button--active");
             
             tipValue = parseFloat($tip.value)/100;
+            calculator()
         }
     })
 
